@@ -21,17 +21,17 @@ const questions = [
 
 function Faq() {
   return (
-    <>
-      <h1>Project 2: FAQ/Accordion</h1>
-      <div className="container">
+    <section>
+      <h1>Component #2: FAQ/Accordion</h1>
+      <div className="faq-container">
         <h2>Frequently Asked Questions</h2>
-        <div className="questions">
+        <div>
           {questions.map((question) => (
             <Question key={question.id} question={question} />
           ))}
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

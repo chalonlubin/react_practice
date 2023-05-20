@@ -24,14 +24,17 @@
 
 .slide-content {
   position:relative;
+  color: white;
   /* border: 1px solid blue; */
 }
 
 
-img {
+.slide-content img {
   width: 20rem;
   height: 20rem;
   border-radius: 5%;
+  border: 3px solid black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   /* border: 1px solid red; */
 }
 
@@ -39,10 +42,9 @@ img {
 .right-arrow {
   position: absolute;
   z-index: 1;
-  font-size: 20px;
-  width: 20px;
-  background: black;
-  border-radius: 50%;
+  font-size: 30px;
+  font-weight: bolder;
+  width: 25px;
   padding: 4px 8px;
   cursor: pointer;
   user-select: none;

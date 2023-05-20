@@ -1,32 +1,38 @@
-.container h2 {
+.faq-container h2 {
   margin: 0 auto;
   text-align: center;
   padding: 10px 0 20px 0;
-  color: white;
+  color: black;
 }
 
-button {
+.question-container button {
   background: rgb(211, 216, 253);
   color: rgb(10, 27, 184);
   border: 2px solid rgb(10, 27, 184);
   border-radius: 5px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
-section div,
-section p {
-  background-color: black;
+.question-container div {
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
   margin-top: 0px;
+  border: 1px solid black;
+  transition: transform 0.2s ease;
 }
 
-section p {
+.question-container p {
   padding-bottom: 20px;
 }
 
-section > div.closed {
+.question-container > div.closed {
   margin-bottom: 20px;
+}
+
+.question-container div:hover {
+  transform: scale(1.02);
+  cursor:grab;
 }

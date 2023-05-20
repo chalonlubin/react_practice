@@ -21,7 +21,7 @@ function Carousel() {
   }
 
   return (
-    <>
+    <section>
       <h1> Component 1: Carousel </h1>
       <div className="carousel-container">
         <div className="slider">
@@ -31,10 +31,10 @@ function Carousel() {
                 <div key={image} className="slide">
                   <div className="slide-content">
                     <div className="left-arrow" onClick={prev}>
-                      &#x1F448;
+                      {"<"}
                     </div>
                     <div className="right-arrow" onClick={next}>
-                      &#x1F449;
+                     {">"}
                     </div>
                     <img src={image} alt="images" />
                   </div>
@@ -43,7 +43,7 @@ function Carousel() {
           )}
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

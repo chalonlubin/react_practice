@@ -1,8 +1,26 @@
 .qg-container {
-  margin-top: 100px;
+  margin-top: 3rem;
   display: grid;
   place-items: center;
-  border: 2px solid gray;
-  padding: 20px 10px;
-  background-color: orange;
+  border: 1px solid black;
+  padding: 2rem 2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.qg-container button {
+  padding: 8px;
+  background-color: lightpink;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+
+}
+
+.qg-container button:hover {
+  cursor: pointer;
+  background-color: lightcoral;
+  transform:scale(1.05)
 }

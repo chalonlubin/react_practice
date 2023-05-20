@@ -26,18 +26,18 @@ export default function QuoteGenerator() {
   }
 
   return (
-    <>
+    <section>
       <h1>Compontent 3: Quote Generator</h1>
       <div className="qg-container">
         <button onClick={getNewQuote}>New Quote</button>
         <h3>
           <span>"</span>
-          {quote?.text}
+          {quote?.text}"
         </h3>
         {quote.author &&
         <i>- {quote.author}</i>
         }
       </div>
-    </>
+    </section>
   );
 }
