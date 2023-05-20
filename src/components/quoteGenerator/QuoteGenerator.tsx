@@ -34,7 +34,7 @@ export default function QuoteGenerator() {
           <span>"</span>
           {quote?.text}"
         </h3>
-        {quote.author &&
+        {quote?.author &&
         <i>- {quote.author}</i>
         }
       </div>

@@ -19,12 +19,11 @@ const questions = [
   },
 ];
 
-function Faq() {
+export default function Faq() {
   return (
     <section>
-      <h1>Component #2: FAQ/Accordion</h1>
+      <h1>Component #2: FAQ / Accordion</h1>
       <div className="faq-container">
-        <h2>Frequently Asked Questions</h2>
         <div>
           {questions.map((question) => (
             <Question key={question.id} question={question} />
@@ -35,4 +34,3 @@ function Faq() {
   );
 }
 
-export default Faq;
