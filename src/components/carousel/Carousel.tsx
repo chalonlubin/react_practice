@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./carousel.css"
+import "./carousel.css";
 
 const images = [
   "https://images.pexels.com/photos/3836292/pexels-photo-3836292.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
@@ -21,28 +21,28 @@ function Carousel() {
   }
 
   return (
-    <><h3> Custom Carousel </h3>
-    <div className="carousel-container">
-
-      <div className="slider">
-        {images.map(
-          (image, index) =>
-            current === index && (
-              <div key={image} className="slide">
-                <div className="slide-content">
-                  <div className="left-arrow" onClick={prev}>
-                    &#x1F448;
+    <>
+      <h1> Component 1: Carousel </h1>
+      <div className="carousel-container">
+        <div className="slider">
+          {images.map(
+            (image, index) =>
+              current === index && (
+                <div key={image} className="slide">
+                  <div className="slide-content">
+                    <div className="left-arrow" onClick={prev}>
+                      &#x1F448;
+                    </div>
+                    <div className="right-arrow" onClick={next}>
+                      &#x1F449;
+                    </div>
+                    <img src={image} alt="images" />
                   </div>
-                  <div className="right-arrow" onClick={next}>
-                    &#x1F449;
-                  </div>
-                  <img src={image} alt="images" />
                 </div>
-              </div>
-            )
-        )}
+              )
+          )}
+        </div>
       </div>
-    </div>
     </>
   );
 }
