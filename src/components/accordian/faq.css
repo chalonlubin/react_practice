@@ -34,5 +34,5 @@
 
 .question-container div:hover {
   transform: scale(1.02);
-  cursor:grab;
+  cursor:pointer;
 }

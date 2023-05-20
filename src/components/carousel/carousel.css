@@ -7,7 +7,7 @@
 
 .slider {
   min-width: 50%;
-  height: 500px;
+  height: 350px;
   position: relative;
   /* border: 1px solid beige; */
 }
@@ -42,20 +42,25 @@
 .right-arrow {
   position: absolute;
   z-index: 1;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bolder;
   width: 25px;
-  padding: 4px 8px;
+  padding: 2px 4px;
   cursor: pointer;
   user-select: none;
 }
 
+.left-arrow :hover,
+.right-arrow :hover {
+  cursor: pointer;
+}
+
 .left-arrow {
-  left: 5%;
+  left: 1%;
   bottom: 50%;
 }
 
 .right-arrow {
-  right: 5%;
+  right: 1%;
   bottom: 50%;
 }

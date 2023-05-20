@@ -27,7 +27,7 @@ export default function QuoteGenerator() {
 
   return (
     <section>
-      <h1>Compontent 3: Quote Generator</h1>
+      <h1>Compontent #3: Quote Generator</h1>
       <div className="qg-container">
         <button onClick={getNewQuote}>New Quote</button>
         <h3>
