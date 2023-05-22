@@ -6,10 +6,10 @@
 }
 
 .question-container button {
-  background: rgb(211, 216, 253);
-  color: rgb(10, 27, 184);
-  border: 2px solid rgb(10, 27, 184);
+  background: #99E1D9;
+  color: black;
   border-radius: 5px;
+  min-width: 2rem;
   font-size: 30px;
 }
 
@@ -22,6 +22,7 @@
   margin-top: 0px;
   border: 1px solid black;
   transition: transform 0.2s ease;
+  border-radius: 5px;
 }
 
 .question-container p {

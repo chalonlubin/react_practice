@@ -8,6 +8,7 @@
 .slider {
   min-width: 50%;
   height: 350px;
+  margin: 3%;
   position: relative;
   /* border: 1px solid beige; */
 }

@@ -11,16 +11,16 @@
 
 .qg-container button {
   padding: 8px;
-  background-color: lightpink;
+  background-color: #03CEA4;
   border-radius: 5px;
   font-size: 1.1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease;
+  transition: transform 0.4s ease;
 
 }
 
 .qg-container button:hover {
   cursor: pointer;
-  background-color: lightcoral;
+  background-color: #53eacb;
   transform:scale(1.05)
 }
