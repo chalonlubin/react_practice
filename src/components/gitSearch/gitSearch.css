@@ -1,0 +1,47 @@
+.gs-form input, .gs-form button {
+  padding: 1%;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 5px;
+  box-shadow: 5px 5px black;
+}
+
+.gs-form button {
+background-color: #99e1d9;
+}
+
+.gs-form button {
+  background-color: #99e1d9;
+  transition: transform 0.4s ease;
+}
+
+.gs-form button:hover {
+  cursor: pointer;
+  background-color: #53eacb;
+  transform: scale(1.05);
+}
+
+.list-container ul li{
+  list-style: none;
+}
+
+.list-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.list-container li {
+  margin: 3px;
+  padding: 3px;
+}
+
+.list-container {
+  border: 1px solid black;
+  background-color: blanchedalmond;
+  border-radius: 5px;
+  box-shadow: 5px 5px black;
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+}

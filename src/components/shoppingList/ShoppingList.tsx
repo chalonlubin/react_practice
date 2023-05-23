@@ -3,55 +3,58 @@ import { v4 as uuidv4 } from "uuid";
 import "./shoppingList.css";
 
 export default function ShoppingList() {
-  const [items, setItems] = useState([]);
-  const [inputValue, setInputValue] = useState("");
+  const [list, setList] = useState([]);
+  const [formData, setFormData] = useState("");
   const [error, setError] = useState(false)
 
-  const addItem = (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (!items.some((item => item.value === inputValue ))) {
-      setItems((prevItems) => [
-        ...prevItems,
-        { id: uuidv4(), value: inputValue  },
+    if (!list.some((item => item.value === formData ))) {
+      setList((prevlist) => [
+        ...prevlist,
+        { id: uuidv4(), value: formData  },
       ]);
-      setInputValue("");
+      setFormData("");
       setError(false)
     } else {
       setError(true)
     }
   };
 
+  const handleInputChange = (event) => {
+    setFormData(event.target.value);
+  };
+
   const toggleComplete = (itemId) => {
-    setItems((prevItems) =>
-      prevItems.map((item) =>
+    setList((prevList) =>
+      prevList.map((item) =>
         item.id === itemId ? { ...item, isComplete: !item.isComplete } : item
       )
     );
   };
 
   const removeItem = (itemId) => {
-    setItems((prevItems) => prevItems.filter((item) => item.id !== itemId));
+    setList((prevlist) => prevlist.filter((item) => item.id !== itemId));
     setError(false);
   };
 
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
-  };
+
 
   return (
     <section>
       <h1>Component #4: Shopping List</h1>
       <div className="sl-container">
         <h2>Items To Buy</h2>
-        <form onSubmit={addItem}>
+        <form onSubmit={handleSubmit} className="sl-form">
           {error &&
           <div id="sl-error">Item already exists, please enter new item.</div>}
+          <label htmlFor="item-input"></label>
           <input
             type="text"
-            name="item"
+            name="item-input"
             placeholder="Add a new item"
-            value={inputValue}
+            value={formData}
             onChange={handleInputChange}
             required
           />
@@ -59,7 +62,7 @@ export default function ShoppingList() {
         </form>
         <div className="sl-item-container">
           <ul>
-            {items.map((item) => (
+            {list.map((item) => (
               <li
                 key={item.id}
                 className={item.isComplete ? "complete" : "incomplete"}
