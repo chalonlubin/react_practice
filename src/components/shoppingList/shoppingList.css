@@ -20,33 +20,31 @@
 }
 
 #sl-add-btn {
-  background-color: #99E1D9;
+  background-color: #99e1d9;
   border-radius: 5px;
   font-size: 1.1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease;
-
 }
 
 #sl-add-btn:hover {
   cursor: pointer;
   background-color: #53eacb;
-  transform:scale(1.05)
+  transform: scale(1.05);
 }
 
 .sl-item-container button {
   background: lightpink;
   border-radius: 5px;
-  font-size: .75 rem;
+  font-size: 0.75 rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease;
-
 }
 
 .sl-item-container button:hover {
   cursor: pointer;
   background-color: pink;
-  transform:scale(1.02)
+  transform: scale(1.02);
 }
 
 .sl-item-container ul {
@@ -56,7 +54,6 @@
   width: 100%;
   padding: 2%;
   flex-direction: column;
-
 }
 
 .sl-item-container li {
@@ -69,5 +66,26 @@
 
 .sl-item-container p {
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.25rem;
+}
+
+.incomplete p {
+  cursor: pointer;
+}
+
+.complete p {
+  text-decoration: line-through;
+  opacity: 25%;
+  cursor: pointer;
+}
+
+#sl-error {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2%;
+  margin: 5%;
+  background-color: none;
+  color: black;
+  font-size: 0.85rem;
 }
