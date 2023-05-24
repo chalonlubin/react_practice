@@ -4,37 +4,13 @@
   margin: 1%;
 }
 
-.sl-form input,
-.sl-form button {
-  padding: 1%;
-  margin: 1rem 1rem 1rem 0;
-  border-radius: 5px;
-  box-shadow: 5px 5px black;
-}
-
-#sl-add-btn {
-  background-color: #99e1d9;
-  transition: transform 0.4s ease;
-}
-
-#sl-add-btn:hover {
-  cursor: pointer;
-  background-color: #53eacb;
-  transform: scale(1.05);
-}
-
 .sl-item-container button {
   background: lightpink;
-  border-radius: 5px;
   font-size: 0.75 rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.4s ease;
 }
 
 .sl-item-container button:hover {
-  cursor: pointer;
   background-color: pink;
-  transform: scale(1.02);
 }
 
 .sl-item-container ul {
@@ -55,9 +31,9 @@
 }
 
 .sl-item-container p {
-  font-weight: bold;
+  font-weight: 600;
   font-family: "Courier New", Courier, monospace;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 
 .incomplete p {

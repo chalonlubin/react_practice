@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./gitSearch.css"
+import "./gitSearch.css";
 
 export default function GitSearch() {
   const [user, setUser] = useState(null);
@@ -19,7 +19,6 @@ export default function GitSearch() {
   const handleInputChange = (event) => {
     event.preventDefault();
     setFormData(event.target.value);
-    console.log("formData:", formData);
   };
 
   return (

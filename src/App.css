@@ -19,15 +19,49 @@ html {
   }
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    transform: scale(1.09);
+    transition: transform 0.4s ease;
+}
+
+
+
 section {
   border: 3px solid black;
   border-radius: 20px;
-  padding: 5%;
-  margin: 5%;
+  padding: 4%;
+  margin: 4%;
   background-color: cornsilk;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-.hero h1 {
-  font-size: 2rem;
+button, input {
+  padding: 1%;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 5px;
+  box-shadow: 5px 5px black;
+  font-size: .80rem;
 }
+
+button {
+  cursor: pointer;
+  background-color: #99e1d9;
+  transition: transform 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #006c56;
+  color: white;
+  transform: scale(1.09);
+}
+
+.hero {
+  font-size: 1.75rem;
+  text-align: center;
+}
+

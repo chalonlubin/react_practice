@@ -1,3 +1,5 @@
+
+
 .faq-container h2 {
   margin: 0 auto;
   text-align: center;
@@ -6,11 +8,9 @@
 }
 
 .question-container button {
-  background: #99E1D9;
-  color: black;
-  border-radius: 5px;
+  border-radius: 100%;
   min-width: 2rem;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .question-container div {
@@ -31,9 +31,4 @@
 
 .question-container > div.closed {
   margin-bottom: 20px;
-}
-
-.question-container div:hover {
-  transform: scale(1.02);
-  cursor:pointer;
 }

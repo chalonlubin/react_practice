@@ -22,7 +22,7 @@ function Carousel() {
 
   return (
     <section>
-      <h1> Component #1: Carousel </h1>
+      <h1> Component 1: Carousel </h1>
       <div className="carousel-container">
         <div className="slider">
           {images.map(
