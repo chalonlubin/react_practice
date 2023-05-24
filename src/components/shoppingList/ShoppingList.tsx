@@ -5,20 +5,17 @@ import "./shoppingList.css";
 export default function ShoppingList() {
   const [list, setList] = useState([]);
   const [formData, setFormData] = useState("");
-  const [error, setError] = useState(false)
+  const [error, setError] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if (!list.some((item => item.value === formData ))) {
-      setList((prevlist) => [
-        ...prevlist,
-        { id: uuidv4(), value: formData  },
-      ]);
+    if (!list.some((item) => item.value === formData)) {
+      setList((prevlist) => [...prevlist, { id: uuidv4(), value: formData }]);
       setFormData("");
-      setError(false)
+      setError(false);
     } else {
-      setError(true)
+      setError(true);
     }
   };
 
@@ -26,7 +23,7 @@ export default function ShoppingList() {
     setFormData(event.target.value);
   };
 
-  const toggleComplete = (itemId) => {
+  const toggleComplete = (itemId: number) => {
     setList((prevList) =>
       prevList.map((item) =>
         item.id === itemId ? { ...item, isComplete: !item.isComplete } : item
@@ -35,11 +32,14 @@ export default function ShoppingList() {
   };
 
   const removeItem = (itemId) => {
-    setList((prevlist) => prevlist.filter((item) => item.id !== itemId));
+    setList((prevList) => prevList.filter((item) => item.id !== itemId));
     setError(false);
   };
 
-
+  const handleSuccessButtonClick = (event, itemId) => {
+    event.stopPropagation(); // Stop event propagation to prevent li click event triggering
+    toggleComplete(itemId);
+  };
 
   return (
     <section>
@@ -47,8 +47,9 @@ export default function ShoppingList() {
       <div className="sl-container">
         <h2>Items To Buy</h2>
         <form onSubmit={handleSubmit} className="sl-form">
-          {error &&
-          <div id="sl-error">Item already exists, please enter new item.</div>}
+          {error && (
+            <div id="sl-error">Item already exists, please enter new item.</div>
+          )}
           <label htmlFor="item-input"></label>
           <input
             type="text"
@@ -68,8 +69,19 @@ export default function ShoppingList() {
                 className={item.isComplete ? "complete" : "incomplete"}
                 onClick={() => toggleComplete(item.id)}
               >
+                <button
+                  className="sl-success"
+                  onClick={(event) => handleSuccessButtonClick(event, item.id)}
+                >
+                  X
+                </button>
                 <p>{item.value}</p>
-                <button onClick={() => removeItem(item.id)}>Remove</button>
+                <button
+                  className="sl-danger"
+                  onClick={() => removeItem(item.id)}
+                >
+                  X
+                </button>
               </li>
             ))}
           </ul>

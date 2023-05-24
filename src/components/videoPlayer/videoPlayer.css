@@ -33,4 +33,7 @@ video {
   margin: 2rem;
   width: 30rem;
   max-width: 85%;
+  border: 5px solid black;
+  box-shadow: 10px 10px black;
+  border-radius: 10px;
 }

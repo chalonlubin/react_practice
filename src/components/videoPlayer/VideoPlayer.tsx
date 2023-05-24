@@ -18,14 +18,14 @@ export default function VideoPlayer() {
   const [videoSrc, setVideoSrc] = useState(videos.spider);
 
   function onSelectVideo(video) {
-
     const newSrc = videos[video];
     setVideoSrc(newSrc);
   }
+
   return (
     <section>
       <div className="video-player-container">
-        <h1>Project #6: Video Player</h1>
+        <h1>Component #6: Video Player</h1>
         <Menu onSelectVideo={onSelectVideo} videoValues={videoNames} />
         <Video videoSrc={videoSrc} />
       </div>

@@ -4,13 +4,13 @@
   margin: 1%;
 }
 
-.sl-item-container button {
+.sl-danger {
   background: lightpink;
   font-size: 0.75 rem;
 }
 
-.sl-item-container button:hover {
-  background-color: pink;
+.sl-danger:hover {
+  background-color: rgb(253, 28, 65);
 }
 
 .sl-item-container ul {
