@@ -1,0 +1,36 @@
+.video-player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#radio-form {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.video-inputs {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+}
+
+@media (max-width: 600px) {
+  #radio-form {
+    flex-direction: column;
+  }
+}
+
+.video-inputs input {
+  box-shadow: none;
+  margin: 0 1rem;
+}
+
+video {
+  margin: 2rem;
+  width: 30rem;
+  max-width: 85%;
+}

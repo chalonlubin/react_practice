@@ -4,6 +4,7 @@ import Faq from "./components/accordion/Faq"
 import QuoteGenerator from "./components/quoteGenerator/QuoteGenerator";
 import ShoppingList from "./components/shoppingList/ShoppingList";
 import GitSearch from "./components/gitSearch/GitSearch";
+import VideoPlayer from "./components/videoPlayer/VideoPlayer";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <QuoteGenerator />
     <ShoppingList />
     <GitSearch />
+    <VideoPlayer />
     </>
     )
 }
