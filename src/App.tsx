@@ -5,11 +5,13 @@ import QuoteGenerator from "./components/quoteGenerator/QuoteGenerator";
 import ShoppingList from "./components/shoppingList/ShoppingList";
 import GitSearch from "./components/gitSearch/GitSearch";
 import VideoPlayer from "./components/videoPlayer/VideoPlayer";
+import Navbar from "./components/navbar/Navbar";
 
 
 function App() {
   return(
     <>
+    <Navbar />
     <section className="hero">
       <h1>Practice Components</h1>
     </section>
@@ -19,6 +21,7 @@ function App() {
     <ShoppingList />
     <GitSearch />
     <VideoPlayer />
+
     </>
     )
 }
