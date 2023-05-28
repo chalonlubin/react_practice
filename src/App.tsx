@@ -6,6 +6,7 @@ import ShoppingList from "./components/shoppingList/ShoppingList";
 import GitSearch from "./components/gitSearch/GitSearch";
 import VideoPlayer from "./components/videoPlayer/VideoPlayer";
 import Navbar from "./components/navbar/Navbar";
+import Calc from "./components/calc/Calc"
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     <ShoppingList />
     <GitSearch />
     <VideoPlayer />
+    <Calc />
 
     </>
     )
