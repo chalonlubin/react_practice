@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 
-
 const DEFAULT_WEIGHT = 50;
 const DEFAULT_HEIGHT = 150;
 
@@ -24,7 +23,7 @@ export default function Calc() {
   }, [weight, height]);
 
   return (
-    <main>
+    <section>
       <h1>Project 7: BMI CALCULATOR</h1>
       <div className="input-section">
         <p class="slider-output">Weight: {weight} kg</p>
@@ -49,6 +48,6 @@ export default function Calc() {
         <p>Your BMI is</p>
         <p className="output">{output}</p>
       </div>
-    </main>
+    </section>
   );
 }
